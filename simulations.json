@@ -2,7 +2,7 @@
     "Circular Motion": {
         "Conical Pendulum": {
             "url": "https://www.glowscript.org/#/user/sialaichai/folder/Circular/program/Circular-ConicalPendulum",
-            "description": "Adjust the **velocity** to see the angle change. Red = Tension, Green = Weight."
+            "description": "A conical pendulum rotates in a horizontal circle. Adjust the **velocity** to see the angle change. Red = Tension, Green = Weight."
         },
         "Vertical Circular Motion": {
             "url": "https://www.glowscript.org/#/user/sialaichai/folder/Circular/program/Circular-VerticalCircularMotion1",
