@@ -1,10 +1,10 @@
 import streamlit as st
 import streamlit.components.v1 as components
 import json
-# Custom CSS to remove padding and margins
+# 2. Advanced CSS to remove margins but keep Sidebar controls
 st.markdown("""
     <style>
-        /* Remove padding from the main container */
+        /* 1. Remove padding from the main block-container */
         .block-container {
             padding-top: 0rem;
             padding-bottom: 0rem;
@@ -12,16 +12,27 @@ st.markdown("""
             padding-right: 0rem;
         }
 
-        /* Optional: Hide the header bar at the top */
-        header {visibility: hidden;}
+        /* 2. Target the specific element that creates the top white-space gap */
+        .stAppViewMain {
+            margin-top: -3rem;
+        }
 
-        /* Optional: Hide the footer "Made with Streamlit" */
-        footer {visibility: hidden;}
-        
-        /* Ensure the iframe fills the container width */
+        /* 3. Keep the Sidebar toggle button visible and clickable */
+        .st-emotion-cache-12fmjuu, .st-emotion-cache-6q9sum {
+            background-color: rgba(255, 255, 255, 0.5); /* Makes it visible over simulation */
+            border-radius: 50%;
+            z-index: 999999;
+        }
+
+        /* 4. Ensure the iframe fills the exact screen height minus the title/guide */
         iframe {
-            width: 100%;
             border: none;
+            width: 100vw;
+        }
+        
+        /* Optional: Hide the standard Streamlit decoration line at the top */
+        [data-testid="stDecoration"] {
+            display: none;
         }
     </style>
     """, unsafe_allow_html=True)
