@@ -87,7 +87,7 @@ current_data = ANIMATIONS[selected_topic][selected_script]
 st.caption(f"Category: {selected_topic}")
 st.title(selected_script)
 
-st.markdown("### Guide")
+st.markdown("##### Guide")
 st.info(current_data.get("description", "No description available."))
 
 # --- NEW SECTION: IMAGE DISPLAY ---
