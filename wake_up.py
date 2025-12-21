@@ -26,7 +26,7 @@ def wake_streamlit():
         # This looks for the "Yes, get this app back up!" button
         buttons = driver.find_elements(By.TAG_NAME, "button")
         for btn in buttons:
-            if "wake" in btn.text.lower() or "get this app" in btn.text.lower():
+            if "wake" in btn.text.lower() or "Yes, get this app back up!" in btn.text.lower():
                 btn.click()
                 print("Clicked the wake-up button!")
                 time.sleep(5)
