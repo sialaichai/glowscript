@@ -8,24 +8,33 @@
 </head>
 <body>
 
-    <div class="sidebar">
-        <h2>Find Simulation</h2>
-        <input type="text" id="searchInput" placeholder="🔍 Search by name...">
+    <button id="toggleBtn" class="toggle-btn">☰</button>
+
+    <div class="sidebar" id="sidebar">
+        <h2>Physics Hub</h2>
+        
+        <label for="topicSelect" class="label-text">Choose Topic:</label>
+        <select id="topicSelect" class="dropdown">
+            </select>
+
+        <input type="text" id="searchInput" placeholder="🔍 Filter list..." style="margin-top:15px;">
+
+        <hr>
+
         <div id="navMenu">
             </div>
     </div>
 
-    <div class="main-content">
+    <div class="main-content" id="mainContent">
         <p class="category-tag" id="categoryTag">Category: Loading...</p>
         <h1 id="simTitle">Welcome</h1>
         
         <h3>Guide</h3>
         <div class="info-box" id="simDescription">
-            Select a simulation from the sidebar to begin.
+            Select a topic and simulation from the sidebar to begin.
         </div>
 
-        <div id="imageContainer">
-            </div>
+        <div id="imageContainer"></div>
 
         <div class="iframe-container">
             <iframe id="simFrame" src="" allowfullscreen></iframe>
