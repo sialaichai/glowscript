@@ -106,6 +106,28 @@ function loadSimulation(topic, simName) {
     } else {
         qContainer.style.display = "none";
     }
+
+    // --- NEW SECTION: YouTube Video Handling ---
+    const vContainer = document.getElementById('videoContainer');
+    const vFrame = document.getElementById('videoFrame');
+    
+    if (data.youtube && data.youtube !== "") {
+        vContainer.style.display = "block";
+        
+        // Auto-convert standard YouTube URL (watch?v=) to Embed URL (embed/)
+        let videoUrl = data.youtube;
+        if (videoUrl.includes("watch?v=")) {
+            videoUrl = videoUrl.replace("watch?v=", "embed/");
+            // Remove any extra query params like &t=...
+            if (videoUrl.includes("&")) {
+                videoUrl = videoUrl.split("&")[0];
+            }
+        }
+        vFrame.src = videoUrl;
+    } else {
+        vContainer.style.display = "none";
+        vFrame.src = "";
+    }
 }
 
 // 5. Toggle Sidebar Logic
