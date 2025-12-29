@@ -175,7 +175,8 @@
             document.getElementById('editUrl').value = data.url || "";
             document.getElementById('editDesc').value = data.description || "";
             document.getElementById('editImage').value = data.image || "";
-            
+            // NEW: Load Youtube
+            document.getElementById('editYoutube').value = data.youtube || "";
             // Join questions with newline for textarea
             const qList = data.questions || [];
             document.getElementById('editQuestions').value = qList.join('\n');
@@ -189,6 +190,8 @@
                 url: document.getElementById('editUrl').value,
                 description: document.getElementById('editDesc').value,
                 image: document.getElementById('editImage').value,
+                // NEW: Save Youtube
+                youtube: document.getElementById('editYoutube').value,
                 // Split lines back into array
                 questions: document.getElementById('editQuestions').value.split('\n').filter(line => line.trim() !== "")
             };
@@ -210,7 +213,8 @@
             const name = document.getElementById('newSimName').value;
             if (currentTopic && name && !animationsData[currentTopic][name]) {
                 // Initialize empty
-                animationsData[currentTopic][name] = { url: "", description: "", image: "", questions: [] };
+                // Initialize empty with youtube field
+                animationsData[currentTopic][name] = { url: "", description: "", image: "", youtube: "", questions: [] };
                 renderSims();
                 document.getElementById('newSimName').value = "";
             } else if (!currentTopic) {
