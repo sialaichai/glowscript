@@ -1,0 +1,186 @@
+{
+    "Circular Motion": {
+        "Conical Pendulum": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Circular/program/Circular-ConicalPendulum",
+            "description": "A conical pendulum rotates in a horizontal circle. Adjust the **velocity** to see the angle change. Red = Tension, Green = Weight.",
+            "image": "",
+            "youtube": "",
+            "questions": [
+                "What happens to the angle theta as velocity increases?",
+                "Derive the relationship between tension and angular velocity."
+            ]
+        },
+        "Vertical Circular Motion": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Circular/program/Circular-VerticalCircularMotion1",
+            "description": "Observe tension variations at the top and bottom of the vertical path.",
+            "image": "",
+            "youtube": "",
+            "questions": [
+                "Why is the tension minimum at the top",
+                "Which position is the string likely to break?"
+            ]
+        },
+        "Banked Circular Motion": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Circular/program/BankedTrack",
+            "description": "Animation shows a banked track with components of normal reaction providing centripetal force",
+            "image": "",
+            "youtube": "",
+            "questions": [
+                "Q1. How does speed affect the angle of banking?",
+                "Q2. How does friction contribute to centripetal force?",
+                "Q3. Is friction pointing upward or downward?"
+            ]
+        },
+        "Play Ground Ride": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Circular/program/PlaygroundRide",
+            "description": "Animation shows the angle of inclination from the vertical at different distances from the centre of rotation.",
+            "image": "",
+            "youtube": "",
+            "questions": [
+                "Q1. Do all the rides have the same angular velocity?",
+                "Q2. Do all the rides have the same linear speed?",
+                "Q3. How do the angles change with angular velocity?"
+            ]
+        },
+        "Ferris Wheel": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Circular/program/Circular-FerrisWheelReaction",
+            "description": "Animations shows the forces acting on the object on the seat of a ferris wheel.",
+            "image": "",
+            "youtube": "",
+            "questions": [
+                "Q1 Can the friction be zero?",
+                "Q2 At what position is the normal reaction maximum?"
+            ]
+        },
+        "Glider": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Circular/program/Glider",
+            "description": "Animation sows a glider in horizontal circular motion",
+            "image": "",
+            "youtube": "",
+            "questions": [
+                "Q1 What happens to the angle of inclination of the glider wings if the speed is higher?"
+            ]
+        },
+        "Wall of death": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Circular/program/VerticalWall",
+            "description": "ANimation shows an object moving in horizontal circular motion on a vertical wall",
+            "image": "",
+            "youtube": "https://www.youtube.com/watch?v=fLgm4Rnj6kc",
+            "questions": [
+                "Q1 If the wall has no friction, is it possible to move in a horizontal circular motion.",
+                "Q2 What happens to the angle of the object (e.g. motorcycle) if the speed is higher?"
+            ]
+        }
+    },
+    "Projectile Motion": {
+        "General Projectile": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Kinematics/program/ProjectileGraphVariableHeight",
+            "description": "Vary launch height and angle to see the trajectory.",
+            "image": "",
+            "youtube": "",
+            "questions": [
+                "Can the horizontal velocity become zero in the presence of air resistance?",
+                "Why is the time taken to fall longer than the time to rise in the presence of air resistance?"
+            ]
+        },
+        "Hunter & Monkey": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Kinematics/program/Hunter-monkey",
+            "description": "Classic problem: Independence of horizontal and vertical motion.",
+            "image": "",
+            "youtube": "",
+            "questions": [
+                "What happens if there is no gravity?",
+                "Will the bullet still hit the monkey if the experiment is repeated on the Moon?"
+            ]
+        }
+    },
+    "Magnetism": {
+        "Electric Motor": {
+            "url": "https://effectuall.github.io/Simulations/Magnetism_Force_on_a_Current_Carrying_Conductor",
+            "description": "Basic Operation of a motor",
+            "image": "",
+            "youtube": "",
+            "questions": []
+        }
+    },
+    "Superposition": {
+        "Circular 2 source ": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Superpn/program/Superposition-CircularWaves",
+            "description": "Note how the separation of maxima changes by changing the source sepration and the wavelength.\n",
+            "image": "",
+            "youtube": "https://www.youtube.com/watch?v=Sug0iBjTmtc",
+            "questions": []
+        },
+        "Two source": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Superpn/program/Superposition-Interference",
+            "description": "The blue and green wave sources meet at a point. The resultant displacement is shown by the red sphere. \nAdjust the relative phase difference, amplitude and frequency to see how the resultant displacement changes. ",
+            "image": "",
+            "youtube": "",
+            "questions": []
+        },
+        "Two transverse waves": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Superpn/program/Superposition-Transverse",
+            "description": "Superposition of 2 transverse waves.\nAdjust the amplitude, phase difference, path length to see how the resultant displacement changes.",
+            "image": "",
+            "youtube": "",
+            "questions": []
+        },
+        "Longitudinal Standing": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Superpn/program/Superposition-StandingLongitudinal",
+            "description": "Simulation shows the addition of 2 longitudinal waves in opposite directions gives rise to a standing (red) wave with nodes (white).\nAdjust the wavelength to see how the separation of nodes changes. ",
+            "image": "",
+            "youtube": "",
+            "questions": []
+        },
+        "Transverse Standing": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Superpn/program/Superposition-StandingTransverse",
+            "description": "Simulation shows the formation of transverse standing wave from 2 transverse waves travelling in opposite directions.",
+            "image": "",
+            "youtube": "",
+            "questions": []
+        }
+    },
+    "Wave": {
+        "Longitudinal": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Waves/program/Longitudinal",
+            "description": "Animation shows a longitudinal wave. The particles oscillate about the equilibrium position along the direction of the wave. They do not travel forward with the wave.",
+            "image": "",
+            "youtube": "",
+            "questions": [
+                "What is the phase difference between pressure and displacement?"
+            ]
+        },
+        "Transverse": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Waves/program/Transverse",
+            "description": "The particles oscillate in the direction perpendicular to the wave. The particles do not travel with the wave,",
+            "image": "",
+            "youtube": "",
+            "questions": []
+        },
+        "One polariser": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Waves/program/Polariser",
+            "description": "An unpolarised transverse wave passes through a polariser. A polarised wave is formed along the direction of the polarising filter.",
+            "image": "",
+            "youtube": "",
+            "questions": [
+                "What is the intensity of the polarised light compared to the incident intensity?"
+            ]
+        },
+        "Two polarisers": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Waves/program/Twopolarizer",
+            "description": "The unpolarised light passes through the first polariser to produce a plane polarised light. This plane polarised light passess through a second polariser. The emerging plane polarised light follows the polarisation direction of the second polariser. The intensity of the final polarised light varies with the angle between the two polarisers.",
+            "image": "",
+            "youtube": "",
+            "questions": [
+                "What are the possible angles for the final intensity to be zero?"
+            ]
+        },
+        "Three polariser": {
+            "url": "https://www.glowscript.org/#/user/sialaichai/folder/Waves/program/Threepolarizers",
+            "description": "A vertically polarised light can be rotated into horizontally polarised light.",
+            "image": "",
+            "youtube": "",
+            "questions": []
+        }
+    }
+}
