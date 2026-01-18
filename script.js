@@ -142,24 +142,24 @@ function toggleSidebar() {
     mainContent.classList.toggle('expanded');
 }
 
-// Make the iframe container resizable via drag
 const resizer = document.getElementById('resizer');
 const iframeContainer = document.querySelector('.iframe-container');
 
-let isResizing = false;
+let startY;
+let startHeight;
 
 resizer.addEventListener('mousedown', (e) => {
-  isResizing = true;
-  e.preventDefault(); // Prevent text selection
+  startY = e.clientY;
+  startHeight = parseInt(getComputedStyle(iframeContainer).height, 10);
+  document.documentElement.style.userSelect = 'none'; // Prevent text selection while dragging
+  e.preventDefault();
 });
 
 window.addEventListener('mousemove', (e) => {
-  if (!isResizing) return;
-  
-  // Calculate new height based on mouse Y position
-  const mainContent = document.querySelector('.main-content');
-  const containerRect = mainContent.getBoundingClientRect();
-  let newHeight = e.clientY - containerRect.top - iframeContainer.offsetTop + window.scrollY;
+  if (startY === undefined) return;
+
+  const delta = e.clientY - startY;
+  let newHeight = startHeight + delta;
 
   // Enforce minimum height (e.g., 300px)
   newHeight = Math.max(300, newHeight);
@@ -168,5 +168,7 @@ window.addEventListener('mousemove', (e) => {
 });
 
 window.addEventListener('mouseup', () => {
-  isResizing = false;
+  startY = undefined;
+  startHeight = undefined;
+  document.documentElement.style.userSelect = ''; // Re-enable text selection
 });
