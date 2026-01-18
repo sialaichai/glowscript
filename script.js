@@ -141,3 +141,32 @@ function toggleSidebar() {
     sidebar.classList.toggle('closed');
     mainContent.classList.toggle('expanded');
 }
+
+// Make the iframe container resizable via drag
+const resizer = document.getElementById('resizer');
+const iframeContainer = document.querySelector('.iframe-container');
+
+let isResizing = false;
+
+resizer.addEventListener('mousedown', (e) => {
+  isResizing = true;
+  e.preventDefault(); // Prevent text selection
+});
+
+window.addEventListener('mousemove', (e) => {
+  if (!isResizing) return;
+  
+  // Calculate new height based on mouse Y position
+  const mainContent = document.querySelector('.main-content');
+  const containerRect = mainContent.getBoundingClientRect();
+  let newHeight = e.clientY - containerRect.top - iframeContainer.offsetTop + window.scrollY;
+
+  // Enforce minimum height (e.g., 300px)
+  newHeight = Math.max(300, newHeight);
+
+  iframeContainer.style.height = newHeight + 'px';
+});
+
+window.addEventListener('mouseup', () => {
+  isResizing = false;
+});
